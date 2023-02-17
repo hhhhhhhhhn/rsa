@@ -58,6 +58,7 @@ function millerRabin(n: bigint, times: number): boolean {
 			for (let r = 1n; r < k; r++) {
 				if (expMod(b, 2n**r, n) == nMinusOne) {
 					found = true
+					break
 				}
 			}
 			if (!found) {
