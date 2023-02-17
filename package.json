@@ -1,0 +1,12 @@
+{
+  "name": "rsa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "run": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}

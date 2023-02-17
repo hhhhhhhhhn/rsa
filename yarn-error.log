@@ -1,0 +1,39 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add typescript
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/bin:/home/persona/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/bin:/home/persona/.local/bin:/home/persona/Scripts:/home/persona/.local/go/bin/:/home/persona/Android/Sdk/platform-tools:/bin:/home/persona/.local/bin:/home/persona/Scripts:/home/persona/.local/go/bin/:/home/persona/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/persona/Projects/rsa/package.json: Expected ',' or '}' after property value in JSON at position 84
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "rsa",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+    "scripts": {
+  	  "run": "tsc && node dist/index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
