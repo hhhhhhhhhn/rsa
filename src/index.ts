@@ -80,7 +80,7 @@ function generatePrime(bits: number): bigint {
 	return n
 }
 
-
+// https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
 function extendedEuclidean(a: bigint, b: bigint): [bigint, bigint, bigint]|null {
 	let s = 0n
 	let lastS = 1n
