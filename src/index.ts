@@ -107,7 +107,7 @@ function extendedEuclidean(a: bigint, b: bigint): [bigint, bigint, bigint]|null 
 	return null
 }
 
-/* Returns [publicKey, secretKey, modulo] */
+// Returns [publicKey, secretKey, modulo]
 export function generateKeys(bits: number): [bigint, bigint, bigint] {
 	let p = generatePrime(bits)
 	let q = generatePrime(bits)
